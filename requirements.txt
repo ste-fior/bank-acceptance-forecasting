@@ -10,3 +10,5 @@ hyperopt
 scikit-learn
 matplotlib
 seaborn
+ipykernel
+tqdm

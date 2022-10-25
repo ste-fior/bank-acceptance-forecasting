@@ -8,9 +8,11 @@ Each customer is desbribed by 16 features, which can be numerical, ordinal categ
 - 4 features are related to the last concact happened during this campaign;
 - 4 features are related to the previous campaigns.
 
-# Installing
+# Installing & Requirements
 
-The required libraries for the project are collected in ```requirements.txt``` file.
+The project has been developed with `Python3.9`, but it has been tested with `Python3.7` (minimum version). Once the environment is created, run the following command line to install the required libraries.
+
+```$ pip3 install -r requirements.txt```
 
 # Project structure
 
