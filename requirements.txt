@@ -1,0 +1,7 @@
+tensorflow-gpu==2.10
+numpy
+pandas
+pandas-profiling
+xgboost
+ray[tune]==1.10
+protobuf

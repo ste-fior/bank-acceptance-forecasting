@@ -1,0 +1,81 @@
+## INPUTS USED IN DATASET ##
+#
+# 
+# categorical/ordinal features:
+#   classes: available classes for the feature
+# numerical features:
+#   max: max value to keep the sample, otherwise it's discarded
+#        if max<1 it represents the quantile to keep
+#        if max not set whole dataset is kept
+#
+
+# banck client account
+age:
+  type: numerical
+  max: 100
+job: 
+  type: categorical
+  classes:
+    - admin
+    - unknown
+    - unemployed
+    - management
+    - housemaid
+    - entrepreneur
+    - student
+    - blue-collar
+    - self-employed
+    - retired
+    - technician
+    - services
+marital: 
+  type: ordinal
+  classes: [single, married, divorced]
+education: 
+  type: ordinal
+  classes: [unknown, primary, secondary, tertiary]
+default: 
+  type: ordinal
+  classes: ['no', 'yes']
+balance:
+  type: numerical
+  max: 20000 #null #.98
+housing: 
+  type: ordinal
+  classes: ['no', 'yes']
+loan: 
+  type: ordinal
+  classes: ['no', 'yes']
+
+# last contact for this compaign
+contact: 
+  type: categorical
+  classes: [unknown, telephone, cellular]
+day: 
+  type: numerical
+  max: 31
+month: 
+  type: ordinal
+  classes: [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+duration:
+  type: numerical
+  max: .98
+
+# other
+campaign:
+  type: numerical
+  max: 20 #null #.98
+pdays: 
+  type: numerical
+  max: 600 #null #.98
+previous:
+  type: numerical
+  max: .98
+poutcome: 
+  type: categorical
+  classes: [unknown, other, failure, success]
+
+## output
+y: 
+  type: ordinal
+  classes: ['no', 'yes']

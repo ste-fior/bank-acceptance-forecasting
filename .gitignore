@@ -1,0 +1,5 @@
+.git
+.vscode
+Fastweb-Data-Science-Assignment.zip
+results/*
+!**.gitkeep
